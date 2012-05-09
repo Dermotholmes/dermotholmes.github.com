@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	Mobile first CSS 
+*/
+
+/*------------------/ Resets /------------------*/
+
+/* ----------------------------
+simple reset
+---------------------------- */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin-top: 90px;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+fieldset,img { border: 0; }
+
+legend { color: #000; }
+
+li { list-style: none; }
+
+sup { vertical-align: text-top; }
+
+sub { vertical-align: text-bottom; }
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td
+{
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+input, textarea, select
+{
+	font-size: 110%;
+	line-height: 1.1;
+}
+
+abbr, acronym
+{
+	border-bottom: .1em dotted;
+	cursor: help;
+}			
+
+/* ----------------------------
+end simple reset
+---------------------------- */
+
+/* button resets */
+button.awesome{
+	border: 0;
+}
+/* maybe add this to paint.css */
+
+
+
+/*------------------/ Fonts /------------------*/
+@font-face {
+	font-family: 'MyFontFamily';
+	src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('myfont-webfont.woff') format('woff'), 
+	     url('myfont-webfont.ttf')  format('truetype'),
+	     url('myfont-webfont.svg#svgFontName') format('svg');
+	}
+					
+/*------------------/ Basics /------------------*/
+html{
+	font-family: arial, sans-serif;
+	font-size: 1em;
+}	
+
+
+/*------------------/ Layout (mobile first) /------------------*/
+
+.lane{}
+.masthead{}
+.primaryNav{}
+.chest{}
+.footer{}
+
+/*------------------/ Line level styling /------------------*/
+
+h1{}
+h2{}
+h3{}
+
+
+
+
+/*------------------/ @media queries /------------------*/
+
+
+
+/* Intermediate Width (Tablet) ----------- */
+	@media only screen and (min-width: 480px) {
+
+	}
+	
+/* Wide Width (Desktop) ----------- */
+	@media only screen and (min-width: 768px) {
+		
+	}
+	
+/* Maximal Width (Widescreen) ----------- */
+	@media only screen and (min-width: 1140px) {
+		
+	}
+
+/* ====================
+    Targeted queries
+   ==================== */
+
+
+/* iPhone 4 ----------- */
+	@media
+	only screen and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-device-pixel-ratio : 1.5) {
+				
+	}
+	
+/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+	/* Styles */
+
+	}
+
+/* Smartphones (landscape) ----------- */
+	@media only screen
+	and (min-width : 321px) {
+	/* Styles */
+
+	}
+
+/* Smartphones (portrait) ----------- */
+	@media only screen
+	and (max-width : 320px) {
+	/* Styles */
+		
+	}
+
+/* iPads (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px) {
+	/* Styles */
+
+	}
+
+/* iPads (landscape) ----------- */
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : landscape) {
+	/* Styles */
+		
+	}
+
+/* iPads (portrait) ----------- */
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : portrait) {
+	/* Styles */
+		
+	}
+	
+/* Print ----------- */
+	@media print {
+		* {
+		}
+	}
+	
+	
+/*------------------/ Helpers /------------------*/
+	.clear{
+		clear: both;
+	}
+
+	/* Fluid images */
+	img{
+		max-width: 100%;
+	}
+	.fluidImg {
+		position:relative;
+		/* text-align:center; */
+	}
+	.fluidImg img {
+		/*>>> position:absolute; /* Set for bacground or inflow */
+		top:0;
+		left:0;
+		z-index:-10;
+	}
